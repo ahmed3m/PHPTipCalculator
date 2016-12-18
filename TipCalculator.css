@@ -1,0 +1,15 @@
+div {
+	border: 1px solid black;
+	margin-left: 500px;
+	margin-right: 500px;
+}
+
+.centered {
+	text-align: center;
+}
+
+#result {
+	border: 1px solid blue;
+	border-top: none;
+	color: blue;
+}
