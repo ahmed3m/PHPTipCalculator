@@ -12,7 +12,7 @@
 			<?php
 				for($i = 10; $i <= 20; $i += 5) {
 			?>
-					<input type="radio" name="percent">
+					<input type="radio" name="percent" value ="<?php echo $i; ?>" >
 			<?php
 					echo "$i%";
 				}
@@ -23,5 +23,7 @@
 	</body>
 </html>
 <?php 
-	// code that will execute after submitting form
+	if(isset($_POST['percent'])) {
+		echo "The percentage is: " . $_POST['percent'];
+	}
 ?>
