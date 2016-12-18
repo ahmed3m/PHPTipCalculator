@@ -23,7 +23,7 @@
 	</body>
 </html>
 <?php 
-	if(isset($_POST['bill']) and isset($_POST['percent'])) {
+	if($_POST['bill'] > 0 && isset($_POST['percent'])) {
 		$billSubtotal = $_POST['bill'];
 		$percent = $_POST['percent'];
 		$tip = round($billSubtotal * ($percent / 100), 2);
